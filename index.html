@@ -12,6 +12,8 @@
         <h1>PORTFOLIO</h1>
       </div>
 
+      <div class="hamburger">☰</div>
+
       <div class="navbar-nav">
         <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
@@ -137,5 +139,14 @@
         Copyrigth &copy; 2025 Nisrina Azhaar Jannah Usada | All rights reserved.
       </p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector(".hamburger")
+          .addEventListener("click", function () {
+            document.querySelector(".navbar-nav").classList.toggle("show");
+          });
+      });
+    </script>
   </body>
 </html>
