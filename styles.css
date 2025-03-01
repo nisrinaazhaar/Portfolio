@@ -233,3 +233,122 @@ footer {
 .wa img {
     width: 35px;
 }
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute; 
+    right: 35px; 
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .beranda {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nama {
+        text-align: center;
+    }
+
+    .foto img {
+        width: 350px;
+    }
+
+    .poto img {
+        width: 350px;
+    }
+
+    .projek {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .navbar {
+        flex-direction: row;
+        position: fixed;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        background: var(--secondary);
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-nav a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .navbar-nav.show {
+        display: flex;
+    }
+
+    .about, .projek {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto img {
+        width: 200px;
+    }
+
+    .poto img {
+        width: 200px;
+    }
+
+    .email img {
+        width: 30px;
+    }
+    
+    .linkedin img {
+        width: 25px;
+    }
+    
+    .ig img {
+        width: 25px;
+    }
+    
+    .wa img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .project {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nama h1 {
+        font-size: 2em;
+    }
+    
+    .nama p {
+        font-size: 1em;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
